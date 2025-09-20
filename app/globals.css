@@ -1,9 +1,17 @@
 @import "tailwindcss";
 
+body {
+  background-color: #121212;
+}
+
 .font-saira {
   font-family: var(--font-saira-sans);
 }
 
 .font-saira-condensed {
   font-family: var(--font-saira-condensed-sans);
+}
+
+.font-saira-condensed-light {
+  font-family: var(--font-saira-condensed-sans-light);
 }

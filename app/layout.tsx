@@ -15,6 +15,12 @@ const siaraCondensedSans = Saira_Condensed({
   weight: ["700"],
 });
 
+const siaraCondensedSansLight = Saira_Condensed({
+  variable: "--font-saira-condensed-sans-light",
+  subsets: ["latin"],
+  weight: ["300"],
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${siaraSans.variable} ${siaraCondensedSans.variable} antialiased`}
+        className={`${siaraSans.variable} ${siaraCondensedSans.variable} ${siaraCondensedSansLight.variable} antialiased`}
       >
         <header className="absolute flex flex-row justify-around items-center py-[10] backdrop-blur-sm bg-black/10 w-full z-10 border-1 border-neutral-900">
           <img src="/logo.svg" alt="Rapkology logo"/>
