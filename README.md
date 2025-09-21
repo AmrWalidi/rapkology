@@ -6,6 +6,19 @@
 
 ---
 
+## Rationale
+
+The goal of Rapkology is to create a visually engaging and user-friendly platform dedicated to rap music culture. The rationale behind the technical choices and design decisions includes:
+
+- **Modern Stack:** Using Next.js and React ensures fast performance, scalability, and a great developer experience.
+- **Utility-First Styling:** Tailwind CSS allows for rapid prototyping and consistent design, making it easy to maintain and extend the UI.
+- **Dynamic Content:** Swiper.js and React state management provide interactive and dynamic user experiences, such as carousels and tag-based filtering.
+- **Accessibility:** Semantic HTML and accessible components ensure the platform is usable by everyone.
+- **Customization:** The structure allows for easy addition of new features, categories, and content, supporting the evolving needs of the rap community.
+- **Brand Identity:** Custom fonts, icons, and unique shapes (using `clip-path`) help establish a strong and recognizable visual identity for Rapkology.
+
+---
+
 ## Technical Stack
 
 - **Framework:** Next.js (App Router, React 18)
