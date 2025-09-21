@@ -35,7 +35,7 @@ export default function RootLayout({
           <img src="/logo.svg" alt="Rapkology logo"/>
           <div className="flex flex-row gap-80 items-center">
             <nav  className="flex flex-row gap-[50] justify-between items-center ">   
-            <ul className="flex flex-row gap-[30] text-2xl font-saira font-normal text-sm text-white">
+            <ul className="flex flex-row gap-[30] font-saira font-normal text-sm text-white">
               <li className="cursor-pointer">HABERLER</li>
               <li className="cursor-pointer">ETKİNLİKLER</li>
               <li className="cursor-pointer">MÜZİKLER</li>

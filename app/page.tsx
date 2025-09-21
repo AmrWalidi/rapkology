@@ -1,6 +1,7 @@
 import Hero from "./components/hero";
-import Trendler from "./components/trendler";
-import AyinFavorileri from "./components/ayin_favorileri";
+import Trendler from "./components/trends";
+import AyinFavorileri from "./components/month_favorites";
+import Explore from "./components/explore";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero/>
       <Trendler/>
       <AyinFavorileri/>
+      <Explore/>
     </div>
     
   );
