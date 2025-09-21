@@ -10,12 +10,12 @@ interface postData {
 
 export default function Trendler() {
     return (
-        <div className=" mx-20 mt-50">
-            <div className="flex gap-10">
+        <div className="mx-20 mt-40 ">
+            <div className="flex items-center justify-center gap-10 md:justify-start">
                 <p className="font-saira-condensed text-6xl text-white uppercase font-bold">trendler</p>
                 <FontAwesomeIcon icon={faArrowTrendUp} style={{ fontSize: "65px"}} color="#F0E74D" />
             </div>
-            <div className="grid grid-cols-3 gap-15 mt-10">
+            <div className="flex flex-col items-center gap-15 mt-20 md:grid md:grid-cols-3  ">
                {posts.map((item, index) => (
                     <Post key={index} number={index +1} username={item.attributes.authors[0]} content={item.attributes.content}/>
                 ))} 

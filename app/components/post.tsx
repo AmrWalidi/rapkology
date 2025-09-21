@@ -12,10 +12,10 @@ export default function Post({number, image, date, username, content}: PostProps
     return (
         <div className="flex gap-15">
             {number && <p className="text-6xl font-saira-condensed text-neutral-800 font-bold">{number < 10? `0${number}` : number}</p>}
-            <div className="flex gap-5">
+            <div className="flex flex-col gap-5 md:flex-row">
                 {image && formattedDate && 
                 <div className="flex flex-col gap-5">
-                    <div className="w-70 h-40 ">
+                    <div className="w-full h-full md:w-70 md:h-40 ">
                         <img src={image} alt={`${username}'s post`} className="object-cover"/>
                     </div>
                     <p className="font-saira text-neutral-700">{formattedDate}</p>
@@ -27,7 +27,7 @@ export default function Post({number, image, date, username, content}: PostProps
                             <img src="./post profile.png" alt="post's user image" />
                             <p className="text-base font-saira text-white font-normal">{username}</p>
                         </div>
-                        <p className="text-2xl font-saira-condensed text-white font-bold mb-5 line-clamp-3">{content}</p>
+                        <p className="text-xl font-saira-condensed text-white font-bold mb-5 line-clamp-3 md:text-2xl">{content}</p>
                     </div>
                     <p className="Text-base text-white font-saira cursor-pointer">Daha Fazla Oku</p>
                 </div>
