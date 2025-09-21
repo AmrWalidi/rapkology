@@ -78,10 +78,10 @@ export default function Hero() {
         <div className="relative w-full bg-[url('/fans-background-2.png')] bg-cover bg-bottom bg-no-repeat md:bg-contain">
             <div className="flex flex-col w-full justify-center items-center gap-5 mt-20 md:translate-y-70 md:mt-0">
                 <div className="flex items-center divide-x divide-neutral-700 -rotate-[4deg]" >
-                    <img src="/twitch.png" alt="twitch logo" className="h-30 md:h-auto"/>
+                    <img src="/twitch.png" alt="twitch logo" className="h-20 md:h-auto"/>
                     <div className="px-5">
-                        <p className="font-saira-condensed text-white text-5xl font-light md:text-6xl">HER HAFTA</p>
-                        <p className="font-saira-condensed text-yellow-300 text-5xl font-bold md:text-6xl">CANLIDAYIZ!</p>
+                        <p className="font-saira-condensed text-white text-4xl font-light md:text-6xl">HER HAFTA</p>
+                        <p className="font-saira-condensed text-yellow-300 text-4xl font-bold md:text-6xl">CANLIDAYIZ!</p>
                         <p className="font-saira text-white text-xs font-bold md:text-base">Bizi Takip Edin!</p>
                     </div>
                 </div>
@@ -101,8 +101,8 @@ export default function Hero() {
             <div>
                 <div className="relative">
                     <div className="flex justify-around items-end md:gap-30">
-                        <img src="/rapper-3.png" alt="male rapper" className="h-70 -translate-y-10 md:h-120"/>
-                        <img src="/rapper-4.png" alt="female rapper" className="h-90 -translate-y-2 md:h-150"/>
+                        <img src="/rapper-3.png" alt="male rapper" className="h-50 -translate-y-10 md:h-120"/>
+                        <img src="/rapper-4.png" alt="female rapper" className="h-70 -translate-y-2 md:h-150"/>
                         <img src="/fans-background-1.png" alt="Crowd of enthusiastic fans gathered at the bottom of the scene in a concert setting with a lively and energetic atmosphere" className="absolute w-full h-30 scale-x-[-1]"/>
                     </div>
                 </div>
