@@ -76,7 +76,7 @@ export default function Hero() {
         </SwiperSlide>
         </Swiper>
         <div className="relative w-full bg-[url('/fans-background-2.png')] bg-cover bg-bottom bg-no-repeat md:bg-contain">
-            <div className="flex flex-col w-full justify-center items-center gap-5 mt-20 md:translate-y-70 md:mt-0">
+            <div className="flex flex-col w-full justify-center items-center gap-5 mt-10 md:mt-20 md:translate-y-70 md:mt-0">
                 <div className="flex items-center divide-x divide-neutral-700 -rotate-[4deg]" >
                     <img src="/twitch.png" alt="twitch logo" className="h-20 md:h-auto"/>
                     <div className="px-5">

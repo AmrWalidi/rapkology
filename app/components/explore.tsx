@@ -59,7 +59,7 @@ export default function Explore() {
             <div className="flex flex-col justify-between pb-20 md:flex-row mt-10 md:mt-0">
                 {
                     filteredPosts.length == 0 ? <p className="text-white font-saira text-2xl">Bu kategoride henüz bir içerik bulunmamaktadır.</p> :
-                    <div className="flex flex-col items-center gap-20 md:w-3/5 md:-translate-y-20 md:items-start">
+                    <div className="flex flex-col items-center gap-15 md:gap-20 md:w-3/5 md:-translate-y-20 md:items-start">
                         {
                             filteredPosts.map((post, index) => (
                                 <Post key={index} username={post.attributes.authors[0]} content={post.attributes.content} image={post.attributes.img} date={post.updatedAt}/>
