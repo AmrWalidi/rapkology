@@ -102,8 +102,8 @@ export default function Hero() {
                 <div className="relative">
                     <div className="flex justify-around items-end md:gap-30">
                         <img src="/rapper-3.png" alt="male rapper" className="h-70 -translate-y-10 md:h-120"/>
-                        <img src="/rapper-4.png" alt="female rapper" className="h-100 translate-y-10 md:h-150"/>
-                        <img src="/fans-background-1.png" alt="Crowd of enthusiastic fans gathered at the bottom of the scene in a concert setting with a lively and energetic atmosphere" className="absolute w-full scale-x-[-1]"/>
+                        <img src="/rapper-4.png" alt="female rapper" className="h-90 -translate-y-2 md:h-150"/>
+                        <img src="/fans-background-1.png" alt="Crowd of enthusiastic fans gathered at the bottom of the scene in a concert setting with a lively and energetic atmosphere" className="absolute w-full h-30 scale-x-[-1]"/>
                     </div>
                 </div>
             </div>

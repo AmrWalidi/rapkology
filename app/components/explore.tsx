@@ -46,9 +46,9 @@ export default function Explore() {
                         <FontAwesomeIcon icon={faGridHorizontal} style={{ fontSize: "22px"}} color="white"/>
                     </div>
                 </div>
-                <div className="flex flex-col md:w-fit">
+                <div className="flex flex-col w-full overflow-hidden md:w-fit ">
                     <p className="text-4xl text-white uppercase font-saira-condensed font-bold">NE GÖRMEK İSTERSİN?</p>
-                    <div className="flex gap-3 mt-10 flex-nowrap  md:flex-wrap overflow-hidden md:w-100">
+                    <div className="flex gap-3 mt-10 flex-nowrap  md:flex-wrap md:w-100">
                         {
                             tags.map((tag, index) => (
                                 <button key={index} className={`text-nobreak px-4 py-2 font-saira cursor-pointer ${selectedTag == tag ? 'border-2 border-neutral-950 text-nuetral-950 bg-yellow-300 font-bold' : 'border border-white text-white'}`} onClick={() => setSelectedTag(tag)}>{tag}</button>
