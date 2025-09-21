@@ -10,7 +10,7 @@ interface postData {
 
 export default function Trendler() {
     return (
-        <div className="mx-20 mt-40 ">
+        <div className="mx-10 md:mx-20 mt-40 ">
             <div className="flex items-center justify-center gap-10 md:justify-start">
                 <p className="font-saira-condensed text-6xl text-white uppercase font-bold">trendler</p>
                 <FontAwesomeIcon icon={faArrowTrendUp} style={{ fontSize: "65px"}} color="#F0E74D" />

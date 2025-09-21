@@ -5,7 +5,7 @@ export default function AyinFavorileri() {
             <div className="w-fit bg-white [clip-path:polygon(0%_0%,_100%_0%,_95%_70%,_0%_100%)] px-10 py-10 md:translate-y-10 md:px-40">
                 <div className="flex justify-start gap-10 md:justify-around">
                     <img src="./Youtube logo.png" alt="Youtube logo" className="w-full"/>
-                    <img src="./Spotify logo.png" alt="Spotify logo"/>
+                    <img src="./Spotify Logo.png" alt="Spotify logo"/>
                 </div>
             </div>
             <div className="flex flex-col justify-around items-center gap-10 overflow-hidden md:flex-row md:gap-100">
