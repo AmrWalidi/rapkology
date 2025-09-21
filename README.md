@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rapkology
 
-## Getting Started
+## Overview
 
-First, run the development server:
+**Rapkology** is a modern, responsive web application built with [Next.js](https://nextjs.org/) and [React](https://react.dev/), designed to showcase rap music news, events, videos, and more. The project leverages Tailwind CSS for styling, Swiper.js for carousels, and FontAwesome for icons.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Technical Stack
+
+- **Framework:** Next.js (App Router, React 18)
+- **Styling:** Tailwind CSS, custom CSS (globals.css)
+- **Fonts:** Google Fonts via `next/font/google` (Saira, Saira Condensed)
+- **Icons:** FontAwesome (solid, regular, brands)
+- **Carousel:** Swiper.js
+- **State Management:** React hooks (`useState`)
+- **Data:** Static JSON files (e.g., `posts.json`)
+
+---
+
+## Folder Structure
+
+```
+/app
+  /components
+    album.tsx
+    hero.tsx
+    explore.tsx
+    month_favorites.tsx
+    post.tsx
+    trends.tsx
+  /data
+    posts.json
+  layout.tsx
+  globals.css
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Key Components
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### `layout.tsx`
+- Root layout for the app.
+- Loads Google Fonts and applies them via CSS variables.
+- Responsive header with navigation, search, and mobile menu.
 
-## Learn More
+### `hero.tsx`
+- Main hero section with Swiper carousel.
+- Features dynamic slides, background images, and custom-shaped buttons using `clip-path`.
+- Uses Tailwind’s utility classes for layout and effects.
 
-To learn more about Next.js, take a look at the following resources:
+### `explore.tsx`
+- "Keşfet" (Explore) section for browsing posts by tag/category.
+- Tag filtering with React state.
+- Social media and newsletter signup UI.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `post.tsx`
+- Renders individual post cards using props from `posts.json`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Styling & Fonts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Tailwind CSS** is used for all utility-first styling.
+- **Custom shapes** are achieved with `[clip-path:polygon(...)]` in className.
+- **Google Fonts** are loaded using Next.js font optimization and applied via CSS variables and utility classes.
+- **FontAwesome** icons are imported and used as React components.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Interactivity
+
+- **Filtering:** Posts are filtered by selected tag using React usestate.
+- **Hover Effects:** Tailwind’s `group` and `group-hover` utilities are used for parent-child hover interactions.
+- **Responsive Menus:** Mobile and desktop navigation is handled with conditional rendering and Tailwind breakpoints.
+
+---
+
+## How to Run
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+2. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+3. **Open in browser:**  
+   Visit [http://localhost:3000](http://localhost:3000)
+
+---
+
+## Accessibility & Best Practices
+
+- Semantic HTML is used where possible.
+- Buttons and links are accessible and keyboard-navigable.
+- Responsive design ensures usability on all devices.
