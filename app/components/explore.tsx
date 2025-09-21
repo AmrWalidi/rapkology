@@ -10,7 +10,6 @@ import { useState } from "react"
 
 export default function Explore() {
     const [selectedTag, setSelectedTag] = useState<string>("Türk Rap");
-    const [selectedCategory, setSelectedCategory] = useState<string>("");
     const categories = ["HABERLER", "ETKİNLİKLER", "MÜZİKLER", "VİDEOLAR","İLİTİŞİM"];
     const tags = ["Türk Rap", "Yabancı Rap", "Rap Haberleri", "Haftanın Klipleri","Ayın Klipleri","Rap sohbetleri","Rap Müsabakları"];
 
@@ -30,7 +29,7 @@ export default function Explore() {
         return tagMatch;
     });
     return (
-        <div className="mx-10 mt-40 md:mx-20">
+        <div className="mx-5 mt-40 md:mx-20">
             <div className="flex flex-col gap-10 md:flex-row items-start gap-0">
                 <div className="flex justify-between items-center w-full md:w-3/5">
                     <div className="flex gap-2 md:gap-5">
@@ -86,7 +85,7 @@ export default function Explore() {
                     <ul className="flex flex-row flex-wrap gap-[30] font-saira font-normal text-sm text-white mt-20 w-4/5">
                         {
                             categories.map((category, index) => (
-                                <li key={index} className="cursor-pointer" onClick={()=>setSelectedCategory(category)}>{category}</li>
+                                <li key={index} className="cursor-pointer" >{category}</li>
                             ))
                         }
                     </ul>
