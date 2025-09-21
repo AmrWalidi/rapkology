@@ -11,9 +11,11 @@ interface postData {
 export default function Trendler() {
     return (
         <div className="mx-10 mt-20 md:mx-20 md:mt-40 ">
-            <div className="flex items-center justify-center gap-10 md:justify-start">
+            <div className="flex items-center justify-center gap-5 md:gap-10 md:justify-start">
                 <p className="font-saira-condensed text-4xl  text-white uppercase font-bold md:text-6xl">trendler</p>
-                <FontAwesomeIcon icon={faArrowTrendUp} style={{ fontSize: "65px"}} color="#F0E74D" />
+                <div className="text-4xl text-yellow-300 md:text-6xl">
+                    <FontAwesomeIcon icon={faArrowTrendUp}/>
+                </div>
             </div>
             <div className="flex flex-col items-center gap-15 mt-10 md:grid md:grid-cols-3  md:mt-20">
                {posts.map((item, index) => (
